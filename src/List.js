@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card'
+import ReactDOM from 'react-dom';
 import './List.css';
 
 export default function List(props) {

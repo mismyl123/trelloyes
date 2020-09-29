@@ -1,14 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
-
-
-// Smoke test
+import ReactDOM from "react-dom";
+import List from './List';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<List cards = {[]} />, div);
 
     //clean up code
     ReactDOM.unmountComponentAtNode(div);
