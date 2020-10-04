@@ -10,3 +10,11 @@ it('renders without crashing', () => {
     //clean up code
     ReactDOM.unmountComponentAtNode(div);
 })
+it('renders as expected', () => {
+  const tree = renderer
+    .create(<Card 
+      title="this is title" 
+      content="this is content" />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
