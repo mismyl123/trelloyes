@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import List from './List'
 import STORE from './STORE'
@@ -23,7 +22,7 @@ function omit(obj, keyToOmit) {
 }
 
 class App extends Component {
-   state = {
+  state = {
     store: STORE,
   };
 
@@ -74,7 +73,9 @@ class App extends Component {
     return (
       <main className='App'>
         <header className='App-header'>
-@@ -21,8 +79,11 @@ class App extends Component {
+          <h1>Trelloyes!</h1>
+        </header>
+        <div className='App-list'>
           {store.lists.map(list => (
             <List
               key={list.id}
